@@ -6,15 +6,23 @@ document.getElementById('GeneratePinBtn').addEventListener('click' , function(){
    var numNewCount = Math.floor(Math.random() * 8000+2000);
    document.getElementById('DisplayRandomNumber').value = numNewCount;
 
-   var submitHide = document.getElementById('DisplayRandomNumber').value
-    if (submitHide == "") {
-        document.getElementById('sub-mit').disabled = true
+//    var submitHide = document.getElementById('DisplayRandomNumber').value
+
+
+
+//     if (submitHide == "" ) {
+//         document.getElementById('sub-mit').disabled = true   
+//     }
         
-    } else {
-        document.getElementById('sub-mit').disabled = false 
-    }
-   
+    
+//         else {
+//         document.getElementById('sub-mit').disabled = false 
+       
+//         }
 })
+
+
+
 
 
 // -------------------- calculator part--------------------
@@ -52,6 +60,19 @@ function myfunction(){
    var num1 = document.getElementById('DisplayRandomNumber').value;
    var num2 = document.getElementById('DisplayInputNumber').value;
 
+// alert message show
+
+   if (num1 == '' || num2 == '') {
+    if (num1 == '') {
+        alert('Generate Pin Number First. Click "Generate Pin" Button To Generate Pin Number.')
+    }
+    else {
+        alert('Enter the 4 digit code by using the Number Pad.');
+    }
+    return;
+}
+
+// Right message show
    if (num1 == num2) {
       
      var output = document.getElementById('correct')
@@ -59,12 +80,13 @@ function myfunction(){
      document.getElementById('inCorrect').style.display = "none"
 
    }
+// wrong message show
    else{
     var result = document.getElementById('inCorrect')
     result.style.display = "block"
     document.getElementById('correct').style.display = "none"
 
-    // 
+    // number of trying message show
 
     let leftAlert = document.getElementById('wrong-info');
         leftAlert.style.display ="block";
@@ -82,3 +104,32 @@ function myfunction(){
 
 }
 
+
+
+
+
+
+
+
+
+// if (generatedNumber == '' || userInputNumber == '') {
+//     if (generatedNumber == '') {
+//         alert('Generate Pin Number First. Click "Generate Pin" Button To Generate Pin Number.')
+//     }
+//     else {
+//         alert('Enter the 4 digit code by using the Number Pad.');
+//     }
+//     return;
+// }
+// if (generatedNumber == userInputNumber) {
+//     const matchedNumber = document.getElementById('matched');
+//     matchedNumber.style.display = "block";
+//     document.getElementById('not-matched').style.display = "none";
+
+
+// } else {
+//     const matchedNumber = document.getElementById('not-matched');
+//     matchedNumber.style.display = "block";
+//     document.getElementById('matched').style.display = "none";
+//     chanceLeft();
+// }
