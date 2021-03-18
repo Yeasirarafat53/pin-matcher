@@ -99,3 +99,28 @@ function myfunction(){
 
 }
 
+
+// if (generatedNumber == '' || userInputNumber == '') {
+//     if (generatedNumber == '') {
+//         alert('Generate Pin Number First. Click "Generate Pin" Button To Generate Pin Number.')
+//     }
+//     else {
+//         alert('Enter the 4 digit code by using the Number Pad.');
+//     }
+//     return;
+// }
+// if (generatedNumber == userInputNumber) {
+//     const matchedNumber = document.getElementById('matched');
+//     matchedNumber.style.display = "block";
+//     document.getElementById('not-matched').style.display = "none";
+
+
+// } else {
+//     const matchedNumber = document.getElementById('not-matched');
+//     matchedNumber.style.display = "block";
+//     document.getElementById('matched').style.display = "none";
+//     chanceLeft();
+// }
+// }
+// document.getElementById('submit-button').addEventListener('click', match);
+
