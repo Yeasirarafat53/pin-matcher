@@ -7,14 +7,9 @@ document.getElementById('GeneratePinBtn').addEventListener('click' , function(){
    document.getElementById('DisplayRandomNumber').value = numNewCount;
 
 //    var submitHide = document.getElementById('DisplayRandomNumber').value
-
-
-
 //     if (submitHide == "" ) {
 //         document.getElementById('sub-mit').disabled = true   
 //     }
-        
-    
 //         else {
 //         document.getElementById('sub-mit').disabled = false 
        
@@ -104,32 +99,3 @@ function myfunction(){
 
 }
 
-
-
-
-
-
-
-
-
-// if (generatedNumber == '' || userInputNumber == '') {
-//     if (generatedNumber == '') {
-//         alert('Generate Pin Number First. Click "Generate Pin" Button To Generate Pin Number.')
-//     }
-//     else {
-//         alert('Enter the 4 digit code by using the Number Pad.');
-//     }
-//     return;
-// }
-// if (generatedNumber == userInputNumber) {
-//     const matchedNumber = document.getElementById('matched');
-//     matchedNumber.style.display = "block";
-//     document.getElementById('not-matched').style.display = "none";
-
-
-// } else {
-//     const matchedNumber = document.getElementById('not-matched');
-//     matchedNumber.style.display = "block";
-//     document.getElementById('matched').style.display = "none";
-//     chanceLeft();
-// }
